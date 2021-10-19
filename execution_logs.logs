@@ -1,0 +1,16 @@
+WARNING:django.request:Not Found: /
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:C:\Users\emyde\PycharmProjects\DjangoExpenseManager\venv\ExpenseManagerProject\HomePageApp\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\emyde\PycharmProjects\DjangoExpenseManager\venv\ExpenseManagerProject\HomePageApp\views.py changed, reloading.
+WARNING:django.request:Not Found: /
+WARNING:django.request:Not Found: /favicon.ico
+ERROR:django.request:Internal Server Error: /home/landing/
+Traceback (most recent call last):
+  File "C:\Users\emyde\PycharmProjects\DjangoExpenseManager\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\emyde\PycharmProjects\DjangoExpenseManager\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\emyde\PycharmProjects\DjangoExpenseManager\venv\ExpenseManagerProject\HomePageApp\views.py", line 12, in show_homepage
+    if currentHour<12:
+TypeError: '<' not supported between instances of 'str' and 'int'
+INFO:django.utils.autoreload:C:\Users\emyde\PycharmProjects\DjangoExpenseManager\venv\ExpenseManagerProject\HomePageApp\views.py changed, reloading.

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %} ">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="{%static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{%static 'css/Features-Boxed.css' %}">
+    <link rel="stylesheet" href="{%static 'css/Header-Blue.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="{%static 'css/styles.css' %}">
+</head>
+
+<body>
+    <header class="header-blue">
+        <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+            <div class="container-fluid"><a class="navbar-brand" href="#">Home</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Expense Types&nbsp;</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                        </li>
+                    </ul>
+                    <form class="d-flex me-auto navbar-form" target="_self">
+                        <div class="d-flex align-items-center"><label class="form-label d-flex mb-0" for="search-field"></label></div>
+                    </form><span class="navbar-text"> <a class="login" href="#">Log Out</a></span>
+                </div>
+            </div>
+        </nav>
+        <div class="container hero">
+            <div class="row">
+                <div class="col-12 col-lg-8 col-xl-5 offset-lg-2 offset-xl-1">
+                    <h1>Hello {{ t_greetMessage }}, {{ t_userName }} !&nbsp;</h1>
+                    <p data-bss-hover-animate="bounce">Start Managing Your expenses from today in smarter way !&nbsp;</p><button class="btn btn-light btn-lg action-button" type="button">Add Expense</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="features-boxed">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Features </h2>
+                <p class="text-center">Manage Your Categories Below&nbsp;</p>
+            </div>
+            <div class="row justify-content-center features">
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-map-marker icon"></i>
+                        <h3 class="name">Cash Transactions</h3>
+                        <p class="description">Cash Transactions</p><a class="learn-more" href="#">Learn more »</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-clock-o icon"></i>
+                        <h3 class="name">Credit Card Expenses</h3>
+                        <p class="description">Credit Transactions</p><a class="learn-more" href="#">Learn more »</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-list-alt icon"></i>
+                        <h3 class="name">Debit &amp; Digital Transactions</h3>
+                        <p class="description">Debit Transactions</p><a class="learn-more" href="#">Learn more »</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-leaf icon"></i>
+                        <h3 class="name">Mutual Fund Investments&nbsp;</h3>
+                        <p class="description">Your Mutual Funds</p><a class="learn-more" href="#">Learn more »</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-plane icon"></i>
+                        <h3 class="name">Stock Investments</h3>
+                        <p class="description">Your Stocks</p><a class="learn-more" href="#">Learn more »</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                    <div class="box"><i class="fa fa-phone icon"></i>
+                        <h3 class="name">Lended Money</h3>
+                        <p class="description">Money You have Lended to other persons</p><a class="learn-more" href="#">Learn more »</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="{%static 'js/bootstrap.min.js' %}"></script>
+    <script src="{%static 'js/bs-init.js' %}"></script>
+</body>
+
+</html>
